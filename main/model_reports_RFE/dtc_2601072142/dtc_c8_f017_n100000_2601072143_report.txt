@@ -1,0 +1,70 @@
+======================================================================
+Model Report: dtc_c8_f017_n100000_2601072143
+Model Creation: 2026-01-07 21:43
+======================================================================
+
+--- CORE STATS ---
+Features:      17
+Accuracy:      0.9416
+Precision:     0.9419
+Recall:        0.9416
+F1-score:      0.9417
+Training Time: 0.109375 s
+Model Size:    1272.923828 KB
+
+--- DECISION TREE STATS ---
+Depth:         30
+Leaves:        5086
+
+--- CLASSIFICATION REPORT ---
+              precision    recall  f1-score   support
+
+           0     0.8965    0.9083    0.9023      2507
+           1     0.9803    0.9807    0.9805      2490
+           2     0.9636    0.9519    0.9577      2473
+           3     0.9693    0.9693    0.9693      2537
+           4     0.9868    0.9798    0.9833      2525
+           5     0.9072    0.9148    0.9110      2489
+           6     0.9583    0.9478    0.9530      2473
+           7     0.8733    0.8803    0.8768      2506
+
+    accuracy                         0.9416     20000
+   macro avg     0.9419    0.9416    0.9417     20000
+weighted avg     0.9419    0.9416    0.9418     20000
+
+--- FEATURE IMPORTANCE  ---
+             Feature  Importance
+  inter_arrival_time    0.252802
+  src_ip_mac_5_count    0.176013
+     channel_30_mean    0.081080
+      channel_30_var    0.071954
+          device_mac    0.066947
+     l3_ip_dst_count    0.056810
+      most_freq_spot    0.046416
+     payload_entropy    0.039753
+     channel_1_count    0.030351
+              min_et    0.029158
+stream_jitter_30_sum    0.024115
+stream_jitter_60_sum    0.023008
+ src_ip_mac_60_count    0.022447
+              l4_udp    0.021677
+      channel_60_var    0.021028
+               min_p    0.019213
+     stream_30_count    0.017228
+
+--- UNUSED FEATURES (0) ---
+None
+--- PARAMETERS ---
+ccp_alpha                     0
+class_weight                  None
+criterion                     entropy
+max_depth                     30
+max_features                  None
+max_leaf_nodes                None
+min_impurity_decrease         0.0
+min_samples_leaf              1
+min_samples_split             2
+min_weight_fraction_leaf      0.0
+monotonic_cst                 None
+random_state                  0
+splitter                      random

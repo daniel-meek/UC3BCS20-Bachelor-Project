@@ -1,0 +1,59 @@
+======================================================================
+Model Report: lrc_c8_f007_n100000_2601072225
+Model Creation: 2026-01-07 22:25
+======================================================================
+
+--- CORE STATS ---
+Features:      7
+Accuracy:      0.6486
+Precision:     0.698
+Recall:        0.6484
+F1-score:      0.6538
+Training Time: 3.046875 s
+Model Size:    1.496094 KB
+
+--- LOGISTIC REGRESSION STATS ---
+
+--- CLASSIFICATION REPORT ---
+              precision    recall  f1-score   support
+
+           0     0.5663    0.3969    0.4667      2507
+           1     1.0000    0.9112    0.9536      2490
+           2     0.8638    0.5795    0.6936      2473
+           3     0.7700    0.6228    0.6886      2537
+           4     0.5747    0.7743    0.6597      2525
+           5     0.5498    0.5540    0.5519      2489
+           6     0.8362    0.5491    0.6629      2473
+           7     0.4236    0.7993    0.5537      2506
+
+    accuracy                         0.6486     20000
+   macro avg     0.6980    0.6484    0.6538     20000
+weighted avg     0.6974    0.6486    0.6537     20000
+
+--- FEATURE IMPORTANCE  ---
+             Feature  Importance
+  inter_arrival_time  115.419805
+     stream_60_count   64.850044
+stream_jitter_60_sum   62.889166
+     stream_30_count   62.634186
+     src_ip_60_count   39.926674
+    channel_60_count   39.207753
+ src_ip_mac_60_count   38.255097
+
+--- UNUSED FEATURES (0) ---
+None
+--- PARAMETERS ---
+C                             947259726504655
+class_weight                  balanced
+dual                          False
+fit_intercept                 True
+intercept_scaling             1
+l1_ratio                      0.0
+max_iter                      100
+n_jobs                        -1
+penalty                       deprecated
+random_state                  0
+solver                        saga
+tol                           0.0001
+verbose                       0
+warm_start                    False

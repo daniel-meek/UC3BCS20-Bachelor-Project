@@ -1,0 +1,58 @@
+======================================================================
+Model Report: dtc_c8_f005_n100000_2601072143
+Model Creation: 2026-01-07 21:43
+======================================================================
+
+--- CORE STATS ---
+Features:      5
+Accuracy:      0.8680
+Precision:     0.868
+Recall:        0.868
+F1-score:      0.868
+Training Time: 0.062500 s
+Model Size:    3134.478516 KB
+
+--- DECISION TREE STATS ---
+Depth:         30
+Leaves:        12533
+
+--- CLASSIFICATION REPORT ---
+              precision    recall  f1-score   support
+
+           0     0.7094    0.7068    0.7081      2507
+           1     0.9724    0.9759    0.9741      2490
+           2     0.9380    0.9365    0.9373      2473
+           3     0.9695    0.9649    0.9672      2537
+           4     0.9704    0.9723    0.9713      2525
+           5     0.7864    0.7810    0.7837      2489
+           6     0.8944    0.8969    0.8956      2473
+           7     0.7036    0.7095    0.7065      2506
+
+    accuracy                         0.8680     20000
+   macro avg     0.8680    0.8680    0.8680     20000
+weighted avg     0.8681    0.8680    0.8681     20000
+
+--- FEATURE IMPORTANCE  ---
+           Feature  Importance
+inter_arrival_time    0.345772
+        device_mac    0.235776
+   payload_entropy    0.158938
+src_ip_mac_5_count    0.153011
+    channel_30_var    0.106504
+
+--- UNUSED FEATURES (0) ---
+None
+--- PARAMETERS ---
+ccp_alpha                     0
+class_weight                  None
+criterion                     entropy
+max_depth                     30
+max_features                  None
+max_leaf_nodes                None
+min_impurity_decrease         0.0
+min_samples_leaf              1
+min_samples_split             2
+min_weight_fraction_leaf      0.0
+monotonic_cst                 None
+random_state                  0
+splitter                      random

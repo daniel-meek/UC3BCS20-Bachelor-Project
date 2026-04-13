@@ -1,0 +1,67 @@
+======================================================================
+Model Report: rfc_c8_f003_n100000_2601072152
+Model Creation: 2026-01-07 21:52
+======================================================================
+
+--- CORE STATS ---
+Features:      3
+Accuracy:      0.8976
+Precision:     0.9106
+Recall:        0.8975
+F1-score:      0.9004
+Training Time: 11.406250 s
+Model Size:    93104.632812 KB
+
+--- RANDOM FOREST STATS ---
+Trees:         100
+Avg Depth:     34.69
+Max Depth:     43
+Min Depth:     30
+Avg Leaves:    3723.14
+Max Leaves:    4271
+Min Leaves:    3460
+
+--- CLASSIFICATION REPORT ---
+              precision    recall  f1-score   support
+
+           0     0.8100    0.7702    0.7896      2507
+           1     0.9866    0.9751    0.9808      2490
+           2     0.9745    0.9264    0.9498      2473
+           3     0.9729    0.9626    0.9677      2537
+           4     0.9980    0.9687    0.9831      2525
+           5     0.9225    0.7750    0.8424      2489
+           6     0.9613    0.8941    0.9265      2473
+           7     0.6590    0.9078    0.7637      2506
+
+    accuracy                         0.8976     20000
+   macro avg     0.9106    0.8975    0.9004     20000
+weighted avg     0.9105    0.8976    0.9005     20000
+
+--- FEATURE IMPORTANCE  ---
+           Feature  Importance
+inter_arrival_time    0.400255
+   channel_30_mean    0.348829
+  channel_60_count    0.250917
+
+--- UNUSED FEATURES (0) ---
+None
+--- PARAMETERS ---
+bootstrap                     True
+ccp_alpha                     0.0
+class_weight                  None
+criterion                     entropy
+max_depth                     None
+max_features                  0.1
+max_leaf_nodes                None
+max_samples                   0.5
+min_impurity_decrease         0.0
+min_samples_leaf              2
+min_samples_split             2
+min_weight_fraction_leaf      0.0
+monotonic_cst                 None
+n_estimators                  100
+n_jobs                        -1
+oob_score                     False
+random_state                  0
+verbose                       0
+warm_start                    True

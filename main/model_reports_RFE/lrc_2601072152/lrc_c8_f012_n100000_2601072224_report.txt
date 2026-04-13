@@ -1,0 +1,64 @@
+======================================================================
+Model Report: lrc_c8_f012_n100000_2601072224
+Model Creation: 2026-01-07 22:24
+======================================================================
+
+--- CORE STATS ---
+Features:      12
+Accuracy:      0.7483
+Precision:     0.7875
+Recall:        0.7477
+F1-score:      0.7565
+Training Time: 4.156250 s
+Model Size:    1.885742 KB
+
+--- LOGISTIC REGRESSION STATS ---
+
+--- CLASSIFICATION REPORT ---
+              precision    recall  f1-score   support
+
+           0     0.5976    0.5006    0.5448      2507
+           1     1.0000    0.9112    0.9536      2490
+           2     0.9635    0.7691    0.8554      2473
+           3     0.8725    0.9141    0.8928      2537
+           4     0.9440    0.8887    0.9155      2525
+           5     0.5561    0.5798    0.5677      2489
+           6     0.9062    0.6247    0.7396      2473
+           7     0.4602    0.7937    0.5826      2506
+
+    accuracy                         0.7483     20000
+   macro avg     0.7875    0.7477    0.7565     20000
+weighted avg     0.7873    0.7483    0.7567     20000
+
+--- FEATURE IMPORTANCE  ---
+             Feature  Importance
+  inter_arrival_time   86.971175
+ src_ip_mac_60_count   50.584719
+     src_ip_60_count   43.632327
+ src_ip_mac_10_count   42.656736
+     stream_60_count   40.350181
+              min_et   37.569605
+    channel_60_count   36.692889
+      channel_60_var   33.723649
+               min_p   33.225225
+     stream_30_count   33.135052
+stream_jitter_60_sum   29.158722
+stream_jitter_30_sum   26.337215
+
+--- UNUSED FEATURES (0) ---
+None
+--- PARAMETERS ---
+C                             947259726504655
+class_weight                  balanced
+dual                          False
+fit_intercept                 True
+intercept_scaling             1
+l1_ratio                      0.0
+max_iter                      100
+n_jobs                        -1
+penalty                       deprecated
+random_state                  0
+solver                        saga
+tol                           0.0001
+verbose                       0
+warm_start                    False

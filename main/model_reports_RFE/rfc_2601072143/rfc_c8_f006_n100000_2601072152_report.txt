@@ -1,0 +1,70 @@
+======================================================================
+Model Report: rfc_c8_f006_n100000_2601072152
+Model Creation: 2026-01-07 21:52
+======================================================================
+
+--- CORE STATS ---
+Features:      6
+Accuracy:      0.9377
+Precision:     0.945
+Recall:        0.9376
+F1-score:      0.9391
+Training Time: 8.921875 s
+Model Size:    72426.180664 KB
+
+--- RANDOM FOREST STATS ---
+Trees:         100
+Avg Depth:     31.62
+Max Depth:     39
+Min Depth:     26
+Avg Leaves:    2896.00
+Max Leaves:    3182
+Min Leaves:    2612
+
+--- CLASSIFICATION REPORT ---
+              precision    recall  f1-score   support
+
+           0     0.8997    0.9194    0.9094      2507
+           1     0.9955    0.9711    0.9831      2490
+           2     0.9890    0.9426    0.9652      2473
+           3     0.9856    0.9728    0.9792      2537
+           4     0.9992    0.9703    0.9845      2525
+           5     0.9571    0.8421    0.8959      2489
+           6     0.9722    0.9183    0.9445      2473
+           7     0.7621    0.9641    0.8513      2506
+
+    accuracy                         0.9377     20000
+   macro avg     0.9450    0.9376    0.9391     20000
+weighted avg     0.9450    0.9377    0.9392     20000
+
+--- FEATURE IMPORTANCE  ---
+           Feature  Importance
+inter_arrival_time    0.242268
+        device_mac    0.159943
+  channel_60_count    0.155847
+   channel_60_mean    0.151487
+   channel_30_mean    0.148820
+   l3_ip_dst_count    0.141635
+
+--- UNUSED FEATURES (0) ---
+None
+--- PARAMETERS ---
+bootstrap                     True
+ccp_alpha                     0.0
+class_weight                  None
+criterion                     entropy
+max_depth                     None
+max_features                  0.1
+max_leaf_nodes                None
+max_samples                   0.5
+min_impurity_decrease         0.0
+min_samples_leaf              2
+min_samples_split             2
+min_weight_fraction_leaf      0.0
+monotonic_cst                 None
+n_estimators                  100
+n_jobs                        -1
+oob_score                     False
+random_state                  0
+verbose                       0
+warm_start                    True

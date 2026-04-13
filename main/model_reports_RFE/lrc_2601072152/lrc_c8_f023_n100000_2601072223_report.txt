@@ -1,0 +1,75 @@
+======================================================================
+Model Report: lrc_c8_f023_n100000_2601072223
+Model Creation: 2026-01-07 22:23
+======================================================================
+
+--- CORE STATS ---
+Features:      23
+Accuracy:      0.7715
+Precision:     0.8073
+Recall:        0.7709
+F1-score:      0.778
+Training Time: 6.593750 s
+Model Size:    2.756836 KB
+
+--- LOGISTIC REGRESSION STATS ---
+
+--- CLASSIFICATION REPORT ---
+              precision    recall  f1-score   support
+
+           0     0.6175    0.5197    0.5644      2507
+           1     1.0000    0.9112    0.9536      2490
+           2     0.9867    0.8112    0.8904      2473
+           3     0.9074    0.9389    0.9229      2537
+           4     0.9591    0.9568    0.9580      2525
+           5     0.5822    0.5930    0.5876      2489
+           6     0.9240    0.6191    0.7414      2473
+           7     0.4814    0.8168    0.6058      2506
+
+    accuracy                         0.7715     20000
+   macro avg     0.8073    0.7709    0.7780     20000
+weighted avg     0.8071    0.7715    0.7783     20000
+
+--- FEATURE IMPORTANCE  ---
+              Feature  Importance
+   inter_arrival_time   61.415897
+     channel_60_count   30.163682
+      stream_60_count   28.136848
+  src_ip_mac_60_count   25.267464
+      stream_30_count   24.997816
+      src_ip_60_count   24.027720
+      stream_10_count   23.730671
+       channel_60_var   22.748418
+ stream_jitter_60_sum   19.648271
+ stream_jitter_30_sum   17.754046
+               min_et   16.143065
+       channel_30_var   14.935247
+  src_ip_mac_10_count   14.513677
+                 q1_p   14.429082
+  src_ip_mac_30_count   14.004625
+stream_jitter_60_mean   13.838645
+ stream_jitter_10_sum   13.311531
+                min_p   13.184688
+   src_ip_mac_5_count   13.175214
+   src_ip_mac_1_count   13.108398
+                 q1_e   12.706990
+             http_uri   10.926600
+       src_ip_1_count   10.380006
+
+--- UNUSED FEATURES (0) ---
+None
+--- PARAMETERS ---
+C                             947259726504655
+class_weight                  balanced
+dual                          False
+fit_intercept                 True
+intercept_scaling             1
+l1_ratio                      0.0
+max_iter                      100
+n_jobs                        -1
+penalty                       deprecated
+random_state                  0
+solver                        saga
+tol                           0.0001
+verbose                       0
+warm_start                    False

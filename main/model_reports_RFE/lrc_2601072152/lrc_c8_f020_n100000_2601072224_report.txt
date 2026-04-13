@@ -1,0 +1,72 @@
+======================================================================
+Model Report: lrc_c8_f020_n100000_2601072224
+Model Creation: 2026-01-07 22:24
+======================================================================
+
+--- CORE STATS ---
+Features:      20
+Accuracy:      0.7723
+Precision:     0.808
+Recall:        0.7716
+F1-score:      0.7789
+Training Time: 5.906250 s
+Model Size:    2.521484 KB
+
+--- LOGISTIC REGRESSION STATS ---
+
+--- CLASSIFICATION REPORT ---
+              precision    recall  f1-score   support
+
+           0     0.6151    0.5213    0.5643      2507
+           1     1.0000    0.9112    0.9536      2490
+           2     0.9872    0.8091    0.8893      2473
+           3     0.9052    0.9409    0.9227      2537
+           4     0.9600    0.9596    0.9598      2525
+           5     0.5864    0.5942    0.5903      2489
+           6     0.9295    0.6235    0.7464      2473
+           7     0.4810    0.8132    0.6045      2506
+
+    accuracy                         0.7723     20000
+   macro avg     0.8080    0.7716    0.7789     20000
+weighted avg     0.8079    0.7723    0.7791     20000
+
+--- FEATURE IMPORTANCE  ---
+              Feature  Importance
+   inter_arrival_time   66.810625
+      src_ip_60_count   36.372428
+  src_ip_mac_60_count   35.587951
+      stream_60_count   31.449198
+     channel_60_count   31.307469
+      stream_30_count   26.979672
+  src_ip_mac_10_count   26.620686
+       channel_60_var   25.233747
+      stream_10_count   24.330647
+ stream_jitter_60_sum   22.321757
+ stream_jitter_30_sum   19.485624
+               min_et   18.649228
+stream_jitter_60_mean   17.199144
+                min_p   16.013633
+       channel_30_var   15.993799
+   src_ip_mac_1_count   15.597281
+ stream_jitter_10_sum   15.003478
+                 q1_p   14.737283
+  src_ip_mac_30_count   14.258310
+                 q1_e   14.256601
+
+--- UNUSED FEATURES (0) ---
+None
+--- PARAMETERS ---
+C                             947259726504655
+class_weight                  balanced
+dual                          False
+fit_intercept                 True
+intercept_scaling             1
+l1_ratio                      0.0
+max_iter                      100
+n_jobs                        -1
+penalty                       deprecated
+random_state                  0
+solver                        saga
+tol                           0.0001
+verbose                       0
+warm_start                    False

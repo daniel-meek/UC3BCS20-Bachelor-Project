@@ -1,0 +1,82 @@
+======================================================================
+Model Report: rfc_c8_f018_n100000_2601072151
+Model Creation: 2026-01-07 21:51
+======================================================================
+
+--- CORE STATS ---
+Features:      18
+Accuracy:      0.9316
+Precision:     0.9398
+Recall:        0.9315
+F1-score:      0.9334
+Training Time: 9.296875 s
+Model Size:    80862.397461 KB
+
+--- RANDOM FOREST STATS ---
+Trees:         100
+Avg Depth:     34.52
+Max Depth:     44
+Min Depth:     28
+Avg Leaves:    3233.44
+Max Leaves:    3668
+Min Leaves:    2740
+
+--- CLASSIFICATION REPORT ---
+              precision    recall  f1-score   support
+
+           0     0.9017    0.8967    0.8992      2507
+           1     0.9934    0.9675    0.9803      2490
+           2     0.9910    0.9361    0.9628      2473
+           3     0.9852    0.9677    0.9763      2537
+           4     0.9996    0.9731    0.9862      2525
+           5     0.9176    0.8674    0.8918      2489
+           6     0.9824    0.8803    0.9286      2473
+           7     0.7478    0.9629    0.8418      2506
+
+    accuracy                         0.9316     20000
+   macro avg     0.9398    0.9315    0.9334     20000
+weighted avg     0.9398    0.9316    0.9334     20000
+
+--- FEATURE IMPORTANCE  ---
+             Feature  Importance
+  inter_arrival_time    0.114092
+     channel_30_mean    0.062861
+     l3_ip_dst_count    0.061759
+     channel_10_mean    0.058180
+     channel_5_count    0.057436
+     channel_60_mean    0.056146
+    channel_30_count    0.055808
+                q1_e    0.054684
+      channel_60_var    0.052230
+          device_mac    0.052113
+stream_jitter_30_sum    0.051886
+    channel_60_count    0.048105
+ src_ip_mac_10_count    0.047407
+      channel_30_var    0.047326
+      src_ip_5_count    0.046059
+stream_jitter_60_sum    0.045669
+stream_jitter_10_sum    0.045571
+     src_ip_60_count    0.042667
+
+--- UNUSED FEATURES (0) ---
+None
+--- PARAMETERS ---
+bootstrap                     True
+ccp_alpha                     0.0
+class_weight                  None
+criterion                     entropy
+max_depth                     None
+max_features                  0.1
+max_leaf_nodes                None
+max_samples                   0.5
+min_impurity_decrease         0.0
+min_samples_leaf              2
+min_samples_split             2
+min_weight_fraction_leaf      0.0
+monotonic_cst                 None
+n_estimators                  100
+n_jobs                        -1
+oob_score                     False
+random_state                  0
+verbose                       0
+warm_start                    True

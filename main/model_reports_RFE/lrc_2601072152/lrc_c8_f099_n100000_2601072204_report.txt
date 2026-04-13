@@ -1,0 +1,151 @@
+======================================================================
+Model Report: lrc_c8_f099_n100000_2601072204
+Model Creation: 2026-01-07 22:04
+======================================================================
+
+--- CORE STATS ---
+Features:      99
+Accuracy:      0.7857
+Precision:     0.813
+Recall:        0.7852
+F1-score:      0.7929
+Training Time: 22.531250 s
+Model Size:    8.758789 KB
+
+--- LOGISTIC REGRESSION STATS ---
+
+--- CLASSIFICATION REPORT ---
+              precision    recall  f1-score   support
+
+           0     0.5590    0.6653    0.6075      2507
+           1     0.9921    0.9112    0.9500      2490
+           2     0.9641    0.8585    0.9082      2473
+           3     0.9371    0.9389    0.9380      2537
+           4     0.9762    0.9576    0.9668      2525
+           5     0.6643    0.6075    0.6346      2489
+           6     0.9062    0.6405    0.7505      2473
+           7     0.5049    0.7019    0.5873      2506
+
+    accuracy                         0.7857     20000
+   macro avg     0.8130    0.7852    0.7929     20000
+weighted avg     0.8129    0.7857    0.7931     20000
+
+--- FEATURE IMPORTANCE  ---
+                       Feature  Importance
+            inter_arrival_time   36.638638
+              channel_60_count   14.773468
+               stream_60_count   12.562762
+           src_ip_mac_60_count   12.236811
+               stream_30_count   11.295446
+               src_ip_60_count   10.143308
+                channel_60_var    9.433643
+               channel_1_count    8.879637
+            src_ip_mac_1_count    8.728720
+                          q1_p    8.727935
+          stream_jitter_60_sum    8.340635
+                channel_30_var    8.213170
+            src_ip_mac_5_count    8.206750
+          stream_jitter_30_sum    7.777823
+                stream_1_count    7.697581
+                         min_p    7.643090
+           src_ip_mac_30_count    7.236752
+                src_ip_1_count    7.130305
+                 stream_60_var    6.637008
+              channel_30_count    6.447369
+           src_ip_mac_10_count    6.373936
+               stream_10_count    6.224619
+                src_ip_5_count    5.925363
+                            q1    5.431846
+                          q1_e    5.431846
+          stream_jitter_10_sum    5.406295
+                 stream_30_var    5.088224
+                stream_5_count    4.994837
+               channel_60_mean    4.808575
+               channel_5_count    4.578619
+               src_ip_30_count    4.490845
+               src_ip_10_count    4.422895
+               l3_ip_dst_count    4.308136
+           stream_jitter_5_sum    4.267701
+                         min_e    4.226082
+                        min_et    4.226082
+                 src_ip_60_var    4.041027
+             src_ip_mac_60_var    4.002104
+                 channel_5_var    3.991217
+                      http_uri    3.926290
+              channel_10_count    3.693130
+                  stream_1_var    3.595835
+           stream_jitter_1_sum    3.476246
+                 channel_1_var    3.448020
+                  stream_5_var    3.129061
+                channel_10_var    3.094449
+                src_ip_30_mean    3.052393
+                      eth_size    3.050189
+             http_content_type    3.029211
+                src_ip_60_mean    3.023645
+                 src_ip_30_var    2.994439
+                payload_length    2.972408
+             src_ip_mac_30_var    2.955105
+                         var_e    2.933782
+                         iqr_p    2.883750
+                         max_p    2.844504
+            src_ip_mac_60_mean    2.830444
+                stream_60_mean    2.818371
+         stream_jitter_60_mean    2.805324
+         stream_jitter_30_mean    2.791895
+         stream_jitter_10_mean    2.719902
+             src_ip_mac_5_mean    2.711732
+            src_ip_mac_30_mean    2.711273
+          stream_jitter_5_mean    2.704724
+             src_ip_mac_10_var    2.704399
+                 src_ip_10_var    2.693737
+            src_ip_mac_10_mean    2.610953
+          stream_jitter_1_mean    2.591501
+                     average_p    2.401161
+                         sum_p    2.401160
+               channel_10_mean    2.364724
+                channel_5_mean    2.268927
+                icmp_data_size    2.223430
+                 src_ip_1_mean    2.181924
+                 stream_10_var    2.171904
+                 stream_5_mean    2.157778
+              src_ip_mac_1_var    2.141938
+                  src_ip_1_var    2.139139
+                channel_1_mean    2.103017
+                  src_ip_5_var    1.965465
+              src_ip_mac_5_var    1.961328
+               channel_30_mean    1.934978
+                    user_agent    1.912718
+                          q3_p    1.882367
+                stream_10_mean    1.872810
+                        jitter    1.862718
+                src_ip_10_mean    1.847777
+           http_request_method    1.802181
+                         var_p    1.705795
+                    tls_server    1.668345
+   handshake_extensions_length    1.638975
+                 src_ip_5_mean    1.634057
+                stream_30_mean    1.577062
+            http_response_code    1.440498
+                 stream_1_mean    1.426655
+                   dns_len_qry    1.416539
+handshake_cipher_suites_length    1.306425
+                    device_mac    1.296233
+             src_ip_mac_1_mean    0.948229
+
+--- UNUSED FEATURES (0) ---
+None
+--- PARAMETERS ---
+C                             947259726504655
+class_weight                  balanced
+dual                          False
+fit_intercept                 True
+intercept_scaling             1
+l1_ratio                      0.0
+max_iter                      100
+n_jobs                        -1
+penalty                       deprecated
+random_state                  0
+solver                        saga
+tol                           0.0001
+verbose                       0
+warm_start                    False

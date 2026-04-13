@@ -1,0 +1,123 @@
+======================================================================
+Model Report: rfc_c8_f059_n100000_2601072149
+Model Creation: 2026-01-07 21:49
+======================================================================
+
+--- CORE STATS ---
+Features:      59
+Accuracy:      0.9519
+Precision:     0.9557
+Recall:        0.9518
+F1-score:      0.9528
+Training Time: 32.218750 s
+Model Size:    60774.786133 KB
+
+--- RANDOM FOREST STATS ---
+Trees:         100
+Avg Depth:     32.62
+Max Depth:     42
+Min Depth:     27
+Avg Leaves:    2429.91
+Max Leaves:    2893
+Min Leaves:    2074
+
+--- CLASSIFICATION REPORT ---
+              precision    recall  f1-score   support
+
+           0     0.9280    0.9306    0.9293      2507
+           1     0.9911    0.9803    0.9857      2490
+           2     0.9911    0.9454    0.9677      2473
+           3     0.9907    0.9693    0.9799      2537
+           4     0.9996    0.9790    0.9892      2525
+           5     0.9481    0.9180    0.9328      2489
+           6     0.9794    0.9240    0.9509      2473
+           7     0.8179    0.9681    0.8867      2506
+
+    accuracy                         0.9519     20000
+   macro avg     0.9557    0.9518    0.9528     20000
+weighted avg     0.9557    0.9519    0.9528     20000
+
+--- FEATURE IMPORTANCE  ---
+             Feature  Importance
+  inter_arrival_time    0.096315
+     l3_ip_dst_count    0.039197
+ src_ip_mac_30_count    0.029393
+    channel_60_count    0.025501
+    channel_30_count    0.024460
+ src_ip_mac_10_count    0.023312
+stream_jitter_60_sum    0.022826
+     src_ip_30_count    0.022633
+                q1_p    0.022321
+     payload_entropy    0.021211
+     channel_1_count    0.021077
+          device_mac    0.021005
+ src_ip_mac_60_count    0.020613
+     channel_5_count    0.019985
+                  q1    0.019803
+    channel_10_count    0.019303
+  src_ip_mac_5_count    0.018048
+stream_jitter_10_sum    0.017830
+ stream_jitter_5_sum    0.017378
+     stream_60_count    0.017324
+      channel_60_var    0.017246
+stream_jitter_30_sum    0.017057
+      most_freq_spot    0.016469
+       channel_5_var    0.016460
+      stream_30_mean    0.016040
+      channel_10_var    0.015702
+     src_ip_60_count    0.015657
+     channel_30_mean    0.015294
+     src_ip_10_count    0.015100
+     tcp_window_size    0.014947
+      src_ip_1_count    0.014667
+     channel_60_mean    0.014653
+      channel_5_mean    0.014065
+      channel_30_var    0.013998
+     stream_10_count    0.013950
+     channel_10_mean    0.013856
+                q1_e    0.013694
+     stream_30_count    0.013629
+  src_ip_mac_1_count    0.013157
+              min_et    0.012632
+      stream_60_mean    0.012263
+       stream_60_var    0.011914
+           average_p    0.011687
+      src_ip_5_count    0.011179
+       stream_5_mean    0.010705
+               min_e    0.010638
+       stream_30_var    0.010632
+       stream_10_var    0.010337
+      stream_10_mean    0.010278
+       stream_1_mean    0.010141
+               sum_p    0.009761
+        stream_5_var    0.009328
+       channel_1_var    0.008741
+      stream_5_count    0.008429
+       src_ip_60_var    0.007767
+      channel_1_mean    0.007484
+              l4_tcp    0.007438
+                q3_p    0.006993
+ stream_jitter_1_sum    0.006478
+
+--- UNUSED FEATURES (0) ---
+None
+--- PARAMETERS ---
+bootstrap                     True
+ccp_alpha                     0.0
+class_weight                  None
+criterion                     entropy
+max_depth                     None
+max_features                  0.1
+max_leaf_nodes                None
+max_samples                   0.5
+min_impurity_decrease         0.0
+min_samples_leaf              2
+min_samples_split             2
+min_weight_fraction_leaf      0.0
+monotonic_cst                 None
+n_estimators                  100
+n_jobs                        -1
+oob_score                     False
+random_state                  0
+verbose                       0
+warm_start                    True

@@ -1,0 +1,75 @@
+======================================================================
+Model Report: dtc_c8_f022_n100000_2601072143
+Model Creation: 2026-01-07 21:43
+======================================================================
+
+--- CORE STATS ---
+Features:      22
+Accuracy:      0.9435
+Precision:     0.9437
+Recall:        0.9435
+F1-score:      0.9435
+Training Time: 0.125000 s
+Model Size:    1114.999023 KB
+
+--- DECISION TREE STATS ---
+Depth:         30
+Leaves:        4454
+
+--- CLASSIFICATION REPORT ---
+              precision    recall  f1-score   support
+
+           0     0.9158    0.9286    0.9222      2507
+           1     0.9796    0.9827    0.9812      2490
+           2     0.9659    0.9511    0.9584      2473
+           3     0.9777    0.9677    0.9727      2537
+           4     0.9837    0.9798    0.9817      2525
+           5     0.9120    0.9116    0.9118      2489
+           6     0.9437    0.9490    0.9464      2473
+           7     0.8708    0.8771    0.8740      2506
+
+    accuracy                         0.9435     20000
+   macro avg     0.9437    0.9435    0.9435     20000
+weighted avg     0.9437    0.9435    0.9436     20000
+
+--- FEATURE IMPORTANCE  ---
+             Feature  Importance
+  inter_arrival_time    0.203449
+  src_ip_mac_5_count    0.126942
+              l4_udp    0.100619
+          device_mac    0.075956
+ src_ip_mac_60_count    0.070118
+      channel_30_var    0.069560
+     l3_ip_dst_count    0.056814
+     payload_entropy    0.053687
+      most_freq_spot    0.045591
+     channel_30_mean    0.031492
+      channel_60_var    0.027907
+         eth_src_oui    0.019275
+stream_jitter_60_sum    0.017338
+    channel_30_count    0.016443
+stream_jitter_30_sum    0.015468
+              min_et    0.015453
+     channel_1_count    0.013783
+     stream_30_count    0.011410
+     channel_5_count    0.008255
+               min_p    0.007420
+     src_ip_60_count    0.007083
+               med_p    0.005938
+
+--- UNUSED FEATURES (0) ---
+None
+--- PARAMETERS ---
+ccp_alpha                     0
+class_weight                  None
+criterion                     entropy
+max_depth                     30
+max_features                  None
+max_leaf_nodes                None
+min_impurity_decrease         0.0
+min_samples_leaf              1
+min_samples_split             2
+min_weight_fraction_leaf      0.0
+monotonic_cst                 None
+random_state                  0
+splitter                      random

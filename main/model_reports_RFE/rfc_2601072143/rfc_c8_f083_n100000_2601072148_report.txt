@@ -1,0 +1,147 @@
+======================================================================
+Model Report: rfc_c8_f083_n100000_2601072148
+Model Creation: 2026-01-07 21:48
+======================================================================
+
+--- CORE STATS ---
+Features:      83
+Accuracy:      0.9546
+Precision:     0.9582
+Recall:        0.9545
+F1-score:      0.9554
+Training Time: 45.890625 s
+Model Size:    54754.154297 KB
+
+--- RANDOM FOREST STATS ---
+Trees:         100
+Avg Depth:     31.60
+Max Depth:     37
+Min Depth:     26
+Avg Leaves:    2189.07
+Max Leaves:    2499
+Min Leaves:    1838
+
+--- CLASSIFICATION REPORT ---
+              precision    recall  f1-score   support
+
+           0     0.9333    0.9382    0.9357      2507
+           1     0.9951    0.9795    0.9872      2490
+           2     0.9941    0.9482    0.9706      2473
+           3     0.9915    0.9704    0.9809      2537
+           4     0.9996    0.9798    0.9896      2525
+           5     0.9461    0.9237    0.9347      2489
+           6     0.9820    0.9284    0.9545      2473
+           7     0.8240    0.9681    0.8903      2506
+
+    accuracy                         0.9546     20000
+   macro avg     0.9582    0.9545    0.9554     20000
+weighted avg     0.9582    0.9546    0.9555     20000
+
+--- FEATURE IMPORTANCE  ---
+              Feature  Importance
+   inter_arrival_time    0.105342
+      l3_ip_dst_count    0.035384
+      src_ip_10_count    0.031132
+  src_ip_mac_30_count    0.027286
+      src_ip_30_count    0.025906
+     channel_30_count    0.023314
+     channel_10_count    0.022204
+     channel_60_count    0.022022
+      payload_entropy    0.021417
+  src_ip_mac_10_count    0.020455
+       channel_60_var    0.020434
+                 q1_p    0.020337
+ stream_jitter_60_sum    0.020184
+ stream_jitter_30_sum    0.018865
+       channel_10_var    0.017334
+           device_mac    0.015815
+      channel_1_count    0.015421
+       src_ip_5_count    0.015370
+                   q1    0.015237
+  stream_jitter_5_sum    0.014661
+      channel_5_count    0.014494
+                 q1_e    0.014054
+      src_ip_60_count    0.013992
+       most_freq_spot    0.013686
+      stream_30_count    0.013652
+       channel_30_var    0.013651
+        channel_5_var    0.013033
+       src_ip_1_count    0.012660
+      channel_60_mean    0.012555
+                min_e    0.012493
+      tcp_window_size    0.012330
+ stream_jitter_10_sum    0.012210
+       stream_60_mean    0.011721
+      channel_10_mean    0.011532
+      stream_60_count    0.011221
+   src_ip_mac_1_count    0.011052
+       stream_30_mean    0.010296
+      channel_30_mean    0.010139
+        stream_5_mean    0.009963
+  src_ip_mac_60_count    0.009950
+   src_ip_mac_5_count    0.009098
+               min_et    0.009046
+       channel_1_mean    0.008917
+               l4_udp    0.008474
+        channel_1_var    0.008362
+       stream_10_mean    0.008164
+        stream_1_mean    0.008106
+      stream_10_count    0.008105
+        stream_60_var    0.007959
+                min_p    0.007883
+        stream_10_var    0.007844
+               l4_tcp    0.007349
+       channel_5_mean    0.007200
+       stream_5_count    0.006991
+                 q3_p    0.006932
+                sum_p    0.006864
+         stream_5_var    0.006856
+        stream_30_var    0.006732
+            average_p    0.005906
+                max_p    0.005868
+   src_ip_mac_60_mean    0.005399
+                med_p    0.005280
+  stream_jitter_1_sum    0.005066
+       src_ip_60_mean    0.005056
+         stream_1_var    0.004948
+       payload_length    0.004659
+        src_ip_60_var    0.004614
+    src_ip_mac_60_var    0.004590
+        highest_layer    0.004191
+   src_ip_mac_30_mean    0.004112
+          eth_src_oui    0.003998
+        src_ip_30_var    0.003937
+             src_port    0.003912
+                var_e    0.003899
+       src_ip_30_mean    0.003860
+                var_p    0.003848
+    src_ip_mac_30_var    0.003621
+stream_jitter_60_mean    0.003505
+             dst_port    0.003392
+stream_jitter_30_mean    0.003301
+stream_jitter_10_mean    0.003227
+    src_ip_mac_1_mean    0.003175
+    src_ip_mac_5_mean    0.002955
+
+--- UNUSED FEATURES (0) ---
+None
+--- PARAMETERS ---
+bootstrap                     True
+ccp_alpha                     0.0
+class_weight                  None
+criterion                     entropy
+max_depth                     None
+max_features                  0.1
+max_leaf_nodes                None
+max_samples                   0.5
+min_impurity_decrease         0.0
+min_samples_leaf              2
+min_samples_split             2
+min_weight_fraction_leaf      0.0
+monotonic_cst                 None
+n_estimators                  100
+n_jobs                        -1
+oob_score                     False
+random_state                  0
+verbose                       0
+warm_start                    True

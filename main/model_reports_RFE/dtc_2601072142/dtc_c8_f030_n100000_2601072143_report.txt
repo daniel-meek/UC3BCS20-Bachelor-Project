@@ -1,0 +1,83 @@
+======================================================================
+Model Report: dtc_c8_f030_n100000_2601072143
+Model Creation: 2026-01-07 21:43
+======================================================================
+
+--- CORE STATS ---
+Features:      30
+Accuracy:      0.9454
+Precision:     0.9457
+Recall:        0.9453
+F1-score:      0.9455
+Training Time: 0.171875 s
+Model Size:    957.136719 KB
+
+--- DECISION TREE STATS ---
+Depth:         30
+Leaves:        3822
+
+--- CLASSIFICATION REPORT ---
+              precision    recall  f1-score   support
+
+           0     0.8982    0.9110    0.9046      2507
+           1     0.9812    0.9843    0.9828      2490
+           2     0.9651    0.9608    0.9629      2473
+           3     0.9770    0.9728    0.9749      2537
+           4     0.9928    0.9830    0.9879      2525
+           5     0.9299    0.9116    0.9207      2489
+           6     0.9563    0.9551    0.9557      2473
+           7     0.8649    0.8839    0.8743      2506
+
+    accuracy                         0.9454     20000
+   macro avg     0.9457    0.9453    0.9455     20000
+weighted avg     0.9457    0.9454    0.9455     20000
+
+--- FEATURE IMPORTANCE  ---
+             Feature  Importance
+  inter_arrival_time    0.218052
+               min_p    0.155009
+  src_ip_mac_5_count    0.103145
+  src_ip_mac_1_count    0.069122
+     l3_ip_dst_count    0.064977
+              l4_udp    0.041977
+     channel_30_mean    0.036568
+          device_mac    0.034639
+      most_freq_spot    0.031743
+               min_e    0.024453
+      channel_60_var    0.021427
+     payload_entropy    0.018010
+      channel_30_var    0.017418
+     channel_5_count    0.017357
+stream_jitter_60_sum    0.017085
+     channel_60_mean    0.014917
+     src_ip_60_count    0.011774
+     stream_30_count    0.011771
+    channel_60_count    0.011470
+ stream_jitter_5_sum    0.010105
+stream_jitter_10_sum    0.009840
+         eth_src_oui    0.009335
+               med_p    0.008025
+              min_et    0.007835
+    channel_30_count    0.007718
+ src_ip_mac_60_count    0.007285
+stream_jitter_30_sum    0.006224
+     channel_1_count    0.004942
+         eth_dst_oui    0.004630
+       stream_60_var    0.003147
+
+--- UNUSED FEATURES (0) ---
+None
+--- PARAMETERS ---
+ccp_alpha                     0
+class_weight                  None
+criterion                     entropy
+max_depth                     30
+max_features                  None
+max_leaf_nodes                None
+min_impurity_decrease         0.0
+min_samples_leaf              1
+min_samples_split             2
+min_weight_fraction_leaf      0.0
+monotonic_cst                 None
+random_state                  0
+splitter                      random

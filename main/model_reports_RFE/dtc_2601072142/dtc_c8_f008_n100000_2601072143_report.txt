@@ -1,0 +1,61 @@
+======================================================================
+Model Report: dtc_c8_f008_n100000_2601072143
+Model Creation: 2026-01-07 21:43
+======================================================================
+
+--- CORE STATS ---
+Features:      8
+Accuracy:      0.9402
+Precision:     0.9404
+Recall:        0.9402
+F1-score:      0.9403
+Training Time: 0.062500 s
+Model Size:    1442.030273 KB
+
+--- DECISION TREE STATS ---
+Depth:         30
+Leaves:        5763
+
+--- CLASSIFICATION REPORT ---
+              precision    recall  f1-score   support
+
+           0     0.9058    0.9095    0.9076      2507
+           1     0.9812    0.9851    0.9832      2490
+           2     0.9605    0.9535    0.9570      2473
+           3     0.9731    0.9689    0.9710      2537
+           4     0.9809    0.9778    0.9794      2525
+           5     0.8964    0.8967    0.8966      2489
+           6     0.9604    0.9503    0.9553      2473
+           7     0.8650    0.8795    0.8722      2506
+
+    accuracy                         0.9402     20000
+   macro avg     0.9404    0.9402    0.9403     20000
+weighted avg     0.9404    0.9402    0.9403     20000
+
+--- FEATURE IMPORTANCE  ---
+           Feature  Importance
+inter_arrival_time    0.259424
+        device_mac    0.167794
+   channel_1_count    0.158224
+   payload_entropy    0.100144
+    channel_30_var    0.095010
+   l3_ip_dst_count    0.082721
+src_ip_mac_5_count    0.082012
+    most_freq_spot    0.054671
+
+--- UNUSED FEATURES (0) ---
+None
+--- PARAMETERS ---
+ccp_alpha                     0
+class_weight                  None
+criterion                     entropy
+max_depth                     30
+max_features                  None
+max_leaf_nodes                None
+min_impurity_decrease         0.0
+min_samples_leaf              1
+min_samples_split             2
+min_weight_fraction_leaf      0.0
+monotonic_cst                 None
+random_state                  0
+splitter                      random

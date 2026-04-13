@@ -1,0 +1,60 @@
+======================================================================
+Model Report: lrc_c8_f008_n100000_2601072225
+Model Creation: 2026-01-07 22:25
+======================================================================
+
+--- CORE STATS ---
+Features:      8
+Accuracy:      0.6796
+Precision:     0.7253
+Recall:        0.6789
+F1-score:      0.6848
+Training Time: 3.203125 s
+Model Size:    1.580078 KB
+
+--- LOGISTIC REGRESSION STATS ---
+
+--- CLASSIFICATION REPORT ---
+              precision    recall  f1-score   support
+
+           0     0.5700    0.4938    0.5292      2507
+           1     1.0000    0.9112    0.9536      2490
+           2     0.8613    0.5398    0.6637      2473
+           3     0.8538    0.8013    0.8268      2537
+           4     0.6681    0.7949    0.7260      2525
+           5     0.5742    0.5444    0.5589      2489
+           6     0.8435    0.5406    0.6589      2473
+           7     0.4313    0.8053    0.5617      2506
+
+    accuracy                         0.6796     20000
+   macro avg     0.7253    0.6789    0.6848     20000
+weighted avg     0.7249    0.6796    0.6851     20000
+
+--- FEATURE IMPORTANCE  ---
+             Feature  Importance
+  inter_arrival_time   90.391348
+     stream_30_count   56.594930
+ src_ip_mac_60_count   54.669846
+stream_jitter_60_sum   54.547923
+     src_ip_60_count   50.982877
+     stream_60_count   47.063068
+    channel_60_count   43.117741
+ src_ip_mac_10_count   39.973870
+
+--- UNUSED FEATURES (0) ---
+None
+--- PARAMETERS ---
+C                             947259726504655
+class_weight                  balanced
+dual                          False
+fit_intercept                 True
+intercept_scaling             1
+l1_ratio                      0.0
+max_iter                      100
+n_jobs                        -1
+penalty                       deprecated
+random_state                  0
+solver                        saga
+tol                           0.0001
+verbose                       0
+warm_start                    False

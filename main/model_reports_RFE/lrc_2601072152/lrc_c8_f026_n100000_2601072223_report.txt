@@ -1,0 +1,78 @@
+======================================================================
+Model Report: lrc_c8_f026_n100000_2601072223
+Model Creation: 2026-01-07 22:23
+======================================================================
+
+--- CORE STATS ---
+Features:      26
+Accuracy:      0.7723
+Precision:     0.8069
+Recall:        0.7717
+F1-score:      0.7785
+Training Time: 7.187500 s
+Model Size:    2.996094 KB
+
+--- LOGISTIC REGRESSION STATS ---
+
+--- CLASSIFICATION REPORT ---
+              precision    recall  f1-score   support
+
+           0     0.6125    0.5146    0.5593      2507
+           1     1.0000    0.9112    0.9536      2490
+           2     0.9792    0.8205    0.8928      2473
+           3     0.9173    0.9361    0.9266      2537
+           4     0.9569    0.9576    0.9572      2525
+           5     0.5891    0.5898    0.5894      2489
+           6     0.9174    0.6199    0.7399      2473
+           7     0.4829    0.8236    0.6088      2506
+
+    accuracy                         0.7723     20000
+   macro avg     0.8069    0.7717    0.7785     20000
+weighted avg     0.8068    0.7723    0.7788     20000
+
+--- FEATURE IMPORTANCE  ---
+              Feature  Importance
+   inter_arrival_time   57.186736
+     channel_60_count   28.462406
+      stream_60_count   25.016890
+  src_ip_mac_60_count   23.227509
+       channel_60_var   22.498876
+      stream_30_count   20.605524
+      src_ip_60_count   20.145670
+ stream_jitter_60_sum   17.565008
+ stream_jitter_30_sum   15.961802
+       channel_30_var   15.259745
+               min_et   14.774375
+      stream_10_count   14.034688
+                 q1_p   13.904856
+  src_ip_mac_30_count   13.599945
+  src_ip_mac_10_count   13.185935
+       src_ip_1_count   13.088759
+   src_ip_mac_5_count   12.925875
+      channel_1_count   12.880620
+                 q1_e   12.256912
+                min_p   11.962189
+stream_jitter_60_mean   11.239010
+ stream_jitter_10_sum   11.096278
+   src_ip_mac_1_count   10.479490
+       stream_1_count   10.286362
+             http_uri   10.217803
+      src_ip_30_count    8.048959
+
+--- UNUSED FEATURES (0) ---
+None
+--- PARAMETERS ---
+C                             947259726504655
+class_weight                  balanced
+dual                          False
+fit_intercept                 True
+intercept_scaling             1
+l1_ratio                      0.0
+max_iter                      100
+n_jobs                        -1
+penalty                       deprecated
+random_state                  0
+solver                        saga
+tol                           0.0001
+verbose                       0
+warm_start                    False

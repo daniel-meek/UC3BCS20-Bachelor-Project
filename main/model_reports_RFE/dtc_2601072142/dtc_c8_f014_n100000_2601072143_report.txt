@@ -1,0 +1,67 @@
+======================================================================
+Model Report: dtc_c8_f014_n100000_2601072143
+Model Creation: 2026-01-07 21:43
+======================================================================
+
+--- CORE STATS ---
+Features:      14
+Accuracy:      0.9393
+Precision:     0.9394
+Recall:        0.9392
+F1-score:      0.9393
+Training Time: 0.078125 s
+Model Size:    1313.639648 KB
+
+--- DECISION TREE STATS ---
+Depth:         30
+Leaves:        5249
+
+--- CLASSIFICATION REPORT ---
+              precision    recall  f1-score   support
+
+           0     0.8965    0.9055    0.9010      2507
+           1     0.9868    0.9876    0.9872      2490
+           2     0.9630    0.9474    0.9552      2473
+           3     0.9659    0.9708    0.9684      2537
+           4     0.9821    0.9794    0.9808      2525
+           5     0.9108    0.9024    0.9066      2489
+           6     0.9410    0.9474    0.9442      2473
+           7     0.8690    0.8735    0.8712      2506
+
+    accuracy                         0.9393     20000
+   macro avg     0.9394    0.9392    0.9393     20000
+weighted avg     0.9394    0.9393    0.9393     20000
+
+--- FEATURE IMPORTANCE  ---
+             Feature  Importance
+  inter_arrival_time    0.234685
+          device_mac    0.137158
+     payload_entropy    0.125828
+  src_ip_mac_5_count    0.123079
+     l3_ip_dst_count    0.073351
+      channel_30_var    0.064200
+     channel_30_mean    0.058345
+      most_freq_spot    0.044095
+     channel_1_count    0.036312
+stream_jitter_60_sum    0.029098
+ src_ip_mac_60_count    0.028568
+              l4_udp    0.016377
+      channel_60_var    0.015170
+stream_jitter_30_sum    0.013734
+
+--- UNUSED FEATURES (0) ---
+None
+--- PARAMETERS ---
+ccp_alpha                     0
+class_weight                  None
+criterion                     entropy
+max_depth                     30
+max_features                  None
+max_leaf_nodes                None
+min_impurity_decrease         0.0
+min_samples_leaf              1
+min_samples_split             2
+min_weight_fraction_leaf      0.0
+monotonic_cst                 None
+random_state                  0
+splitter                      random

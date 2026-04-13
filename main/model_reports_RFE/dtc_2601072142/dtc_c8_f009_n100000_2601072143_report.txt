@@ -1,0 +1,62 @@
+======================================================================
+Model Report: dtc_c8_f009_n100000_2601072143
+Model Creation: 2026-01-07 21:43
+======================================================================
+
+--- CORE STATS ---
+Features:      9
+Accuracy:      0.9412
+Precision:     0.9412
+Recall:        0.9411
+F1-score:      0.9412
+Training Time: 0.062500 s
+Model Size:    1318.802734 KB
+
+--- DECISION TREE STATS ---
+Depth:         30
+Leaves:        5270
+
+--- CLASSIFICATION REPORT ---
+              precision    recall  f1-score   support
+
+           0     0.8998    0.9031    0.9015      2507
+           1     0.9819    0.9815    0.9817      2490
+           2     0.9627    0.9499    0.9562      2473
+           3     0.9763    0.9732    0.9747      2537
+           4     0.9813    0.9786    0.9800      2525
+           5     0.9137    0.9100    0.9118      2489
+           6     0.9447    0.9596    0.9521      2473
+           7     0.8693    0.8731    0.8712      2506
+
+    accuracy                         0.9412     20000
+   macro avg     0.9412    0.9411    0.9412     20000
+weighted avg     0.9413    0.9412    0.9412     20000
+
+--- FEATURE IMPORTANCE  ---
+             Feature  Importance
+  inter_arrival_time    0.241133
+          device_mac    0.161783
+     payload_entropy    0.147863
+      channel_30_var    0.113584
+     l3_ip_dst_count    0.088679
+  src_ip_mac_5_count    0.082430
+     channel_1_count    0.074392
+      most_freq_spot    0.052057
+stream_jitter_60_sum    0.038080
+
+--- UNUSED FEATURES (0) ---
+None
+--- PARAMETERS ---
+ccp_alpha                     0
+class_weight                  None
+criterion                     entropy
+max_depth                     30
+max_features                  None
+max_leaf_nodes                None
+min_impurity_decrease         0.0
+min_samples_leaf              1
+min_samples_split             2
+min_weight_fraction_leaf      0.0
+monotonic_cst                 None
+random_state                  0
+splitter                      random

@@ -1,0 +1,124 @@
+======================================================================
+Model Report: rfc_c8_f060_n100000_2601072149
+Model Creation: 2026-01-07 21:49
+======================================================================
+
+--- CORE STATS ---
+Features:      60
+Accuracy:      0.9542
+Precision:     0.9576
+Recall:        0.954
+F1-score:      0.9549
+Training Time: 35.718750 s
+Model Size:    56565.043945 KB
+
+--- RANDOM FOREST STATS ---
+Trees:         100
+Avg Depth:     32.83
+Max Depth:     42
+Min Depth:     27
+Avg Leaves:    2261.52
+Max Leaves:    2608
+Min Leaves:    1928
+
+--- CLASSIFICATION REPORT ---
+              precision    recall  f1-score   support
+
+           0     0.9290    0.9398    0.9344      2507
+           1     0.9935    0.9799    0.9867      2490
+           2     0.9928    0.9458    0.9687      2473
+           3     0.9907    0.9689    0.9797      2537
+           4     0.9992    0.9794    0.9892      2525
+           5     0.9487    0.9217    0.9350      2489
+           6     0.9817    0.9313    0.9558      2473
+           7     0.8254    0.9657    0.8900      2506
+
+    accuracy                         0.9542     20000
+   macro avg     0.9576    0.9540    0.9549     20000
+weighted avg     0.9576    0.9542    0.9550     20000
+
+--- FEATURE IMPORTANCE  ---
+             Feature  Importance
+  inter_arrival_time    0.110927
+     l3_ip_dst_count    0.045106
+ src_ip_mac_30_count    0.031316
+     src_ip_30_count    0.028642
+     src_ip_60_count    0.027479
+    channel_30_count    0.026688
+                q1_p    0.026034
+     payload_entropy    0.024810
+    channel_60_count    0.022566
+stream_jitter_60_sum    0.022505
+      channel_30_var    0.021340
+     src_ip_10_count    0.020547
+                  q1    0.019970
+      channel_60_var    0.019605
+          device_mac    0.019446
+stream_jitter_30_sum    0.018514
+      channel_10_var    0.018412
+ src_ip_mac_10_count    0.017062
+     channel_5_count    0.016672
+      src_ip_1_count    0.016671
+      most_freq_spot    0.016119
+    channel_10_count    0.016073
+stream_jitter_10_sum    0.015972
+  src_ip_mac_5_count    0.015337
+ stream_jitter_5_sum    0.015252
+                q1_e    0.014723
+     channel_60_mean    0.014100
+      stream_60_mean    0.013770
+     channel_1_count    0.013605
+     tcp_window_size    0.013460
+              min_et    0.013286
+     channel_10_mean    0.012988
+  src_ip_mac_1_count    0.012782
+     stream_60_count    0.012486
+     channel_30_mean    0.012449
+      stream_10_mean    0.011912
+     stream_30_count    0.011896
+      src_ip_5_count    0.011703
+       channel_5_var    0.011354
+      channel_5_mean    0.011181
+     stream_10_count    0.011147
+       stream_60_var    0.010974
+               min_e    0.010857
+ src_ip_mac_60_count    0.010826
+       stream_1_mean    0.010305
+       channel_1_var    0.010024
+       stream_30_var    0.009772
+       stream_10_var    0.009718
+      stream_30_mean    0.009622
+                q3_p    0.009013
+        stream_5_var    0.008465
+           average_p    0.007999
+       stream_5_mean    0.007950
+       src_ip_60_var    0.007644
+      stream_5_count    0.007487
+      channel_1_mean    0.006966
+               sum_p    0.006951
+              l4_tcp    0.006683
+ stream_jitter_1_sum    0.006525
+               min_p    0.006312
+
+--- UNUSED FEATURES (0) ---
+None
+--- PARAMETERS ---
+bootstrap                     True
+ccp_alpha                     0.0
+class_weight                  None
+criterion                     entropy
+max_depth                     None
+max_features                  0.1
+max_leaf_nodes                None
+max_samples                   0.5
+min_impurity_decrease         0.0
+min_samples_leaf              2
+min_samples_split             2
+min_weight_fraction_leaf      0.0
+monotonic_cst                 None
+n_estimators                  100
+n_jobs                        -1
+oob_score                     False
+random_state                  0
+verbose                       0
+warm_start                    True

@@ -1,0 +1,65 @@
+======================================================================
+Model Report: rfc_c8_f001_n100000_2601072152
+Model Creation: 2026-01-07 21:52
+======================================================================
+
+--- CORE STATS ---
+Features:      1
+Accuracy:      0.5605
+Precision:     0.5511
+Recall:        0.5598
+F1-score:      0.5471
+Training Time: 11.984375 s
+Model Size:    146947.345703 KB
+
+--- RANDOM FOREST STATS ---
+Trees:         100
+Avg Depth:     35.74
+Max Depth:     43
+Min Depth:     29
+Avg Leaves:    5876.85
+Max Leaves:    6019
+Min Leaves:    5794
+
+--- CLASSIFICATION REPORT ---
+              precision    recall  f1-score   support
+
+           0     0.5210    0.4747    0.4968      2507
+           1     0.9738    0.9414    0.9573      2490
+           2     0.2606    0.1419    0.1838      2473
+           3     0.5186    0.8735    0.6508      2537
+           4     0.3952    0.4234    0.4088      2525
+           5     0.6624    0.6055    0.6327      2489
+           6     0.5651    0.5281    0.5460      2473
+           7     0.5121    0.4900    0.5008      2506
+
+    accuracy                         0.5605     20000
+   macro avg     0.5511    0.5598    0.5471     20000
+weighted avg     0.5509    0.5605    0.5473     20000
+
+--- FEATURE IMPORTANCE  ---
+           Feature  Importance
+inter_arrival_time         1.0
+
+--- UNUSED FEATURES (0) ---
+None
+--- PARAMETERS ---
+bootstrap                     True
+ccp_alpha                     0.0
+class_weight                  None
+criterion                     entropy
+max_depth                     None
+max_features                  0.1
+max_leaf_nodes                None
+max_samples                   0.5
+min_impurity_decrease         0.0
+min_samples_leaf              2
+min_samples_split             2
+min_weight_fraction_leaf      0.0
+monotonic_cst                 None
+n_estimators                  100
+n_jobs                        -1
+oob_score                     False
+random_state                  0
+verbose                       0
+warm_start                    True

@@ -1,0 +1,61 @@
+======================================================================
+Model Report: lrc_c8_f009_n100000_2601072225
+Model Creation: 2026-01-07 22:25
+======================================================================
+
+--- CORE STATS ---
+Features:      9
+Accuracy:      0.7029
+Precision:     0.7443
+Recall:        0.7025
+F1-score:      0.7104
+Training Time: 3.531250 s
+Model Size:    1.659180 KB
+
+--- LOGISTIC REGRESSION STATS ---
+
+--- CLASSIFICATION REPORT ---
+              precision    recall  f1-score   support
+
+           0     0.5862    0.4922    0.5351      2507
+           1     1.0000    0.9112    0.9536      2490
+           2     0.9234    0.6579    0.7684      2473
+           3     0.8493    0.7887    0.8179      2537
+           4     0.7445    0.8250    0.7826      2525
+           5     0.5459    0.5380    0.5419      2489
+           6     0.8616    0.6094    0.7139      2473
+           7     0.4434    0.7977    0.5700      2506
+
+    accuracy                         0.7029     20000
+   macro avg     0.7443    0.7025    0.7104     20000
+weighted avg     0.7439    0.7029    0.7105     20000
+
+--- FEATURE IMPORTANCE  ---
+             Feature  Importance
+  inter_arrival_time   95.042216
+     src_ip_60_count   52.490967
+ src_ip_mac_60_count   51.244181
+    channel_60_count   46.226220
+stream_jitter_60_sum   45.452370
+ src_ip_mac_10_count   44.084493
+     stream_60_count   40.382138
+     stream_30_count   30.183616
+      channel_60_var   28.895641
+
+--- UNUSED FEATURES (0) ---
+None
+--- PARAMETERS ---
+C                             947259726504655
+class_weight                  balanced
+dual                          False
+fit_intercept                 True
+intercept_scaling             1
+l1_ratio                      0.0
+max_iter                      100
+n_jobs                        -1
+penalty                       deprecated
+random_state                  0
+solver                        saga
+tol                           0.0001
+verbose                       0
+warm_start                    False

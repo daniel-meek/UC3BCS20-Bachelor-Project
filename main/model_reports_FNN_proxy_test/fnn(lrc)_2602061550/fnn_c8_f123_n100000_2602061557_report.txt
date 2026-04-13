@@ -1,0 +1,59 @@
+======================================================================
+Model Report: fnn_c8_f123_n100000_2602061557
+Model Creation: 2026-02-06 15:57
+======================================================================
+
+--- CORE STATS ---
+Features:      123
+Accuracy:      0.9291
+Precision:     0.9318
+Recall:        0.9289
+F1-score:      0.9299
+Training Time: 63.953125 s
+Model Size:    406.381836 KB
+
+--- FEEDFORWARD NEURAL NETWORK STATS ---
+Hidden Layers: (64, 64, 64)
+Iterations:    110
+Activation:    tanh
+
+--- CLASSIFICATION REPORT ---
+              precision    recall  f1-score   support
+
+           0     0.8660    0.9126    0.8887      2507
+           1     0.9868    0.9610    0.9738      2490
+           2     0.9877    0.9422    0.9644      2473
+           3     0.9891    0.9665    0.9777      2537
+           4     0.9943    0.9747    0.9844      2525
+           5     0.8851    0.8730    0.8790      2489
+           6     0.9402    0.9155    0.9277      2473
+           7     0.8052    0.8859    0.8436      2506
+
+    accuracy                         0.9291     20000
+   macro avg     0.9318    0.9289    0.9299     20000
+weighted avg     0.9319    0.9291    0.9300     20000
+
+--- PARAMETERS ---
+activation                    tanh
+alpha                         0.0001
+batch_size                    auto
+beta_1                        0.9
+beta_2                        0.999
+early_stopping                True
+epsilon                       1e-08
+hidden_layer_sizes            (64, 64, 64)
+learning_rate                 constant
+learning_rate_init            0.001
+max_fun                       15000
+max_iter                      500
+momentum                      0.9
+n_iter_no_change              10
+nesterovs_momentum            True
+power_t                       0.5
+random_state                  0
+shuffle                       True
+solver                        adam
+tol                           0.0001
+validation_fraction           0.1
+verbose                       False
+warm_start                    False

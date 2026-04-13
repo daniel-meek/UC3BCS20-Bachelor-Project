@@ -1,0 +1,77 @@
+======================================================================
+Model Report: rfc_c8_f013_n100000_2601072151
+Model Creation: 2026-01-07 21:51
+======================================================================
+
+--- CORE STATS ---
+Features:      13
+Accuracy:      0.9364
+Precision:     0.9437
+Recall:        0.9362
+F1-score:      0.9379
+Training Time: 9.296875 s
+Model Size:    78671.312500 KB
+
+--- RANDOM FOREST STATS ---
+Trees:         100
+Avg Depth:     33.51
+Max Depth:     41
+Min Depth:     28
+Avg Leaves:    3145.80
+Max Leaves:    3769
+Min Leaves:    2429
+
+--- CLASSIFICATION REPORT ---
+              precision    recall  f1-score   support
+
+           0     0.9085    0.9075    0.9080      2507
+           1     0.9930    0.9711    0.9819      2490
+           2     0.9910    0.9373    0.9634      2473
+           3     0.9856    0.9696    0.9775      2537
+           4     0.9992    0.9703    0.9845      2525
+           5     0.9330    0.8783    0.9048      2489
+           6     0.9818    0.8937    0.9356      2473
+           7     0.7579    0.9617    0.8477      2506
+
+    accuracy                         0.9364     20000
+   macro avg     0.9437    0.9362    0.9379     20000
+weighted avg     0.9437    0.9364    0.9380     20000
+
+--- FEATURE IMPORTANCE  ---
+             Feature  Importance
+  inter_arrival_time    0.138310
+     l3_ip_dst_count    0.088643
+     channel_60_mean    0.082721
+    channel_30_count    0.074449
+     channel_30_mean    0.074025
+      channel_60_var    0.070977
+      src_ip_5_count    0.070929
+    channel_60_count    0.070841
+stream_jitter_60_sum    0.069092
+     channel_10_mean    0.068430
+     channel_5_count    0.067574
+          device_mac    0.065315
+stream_jitter_30_sum    0.058693
+
+--- UNUSED FEATURES (0) ---
+None
+--- PARAMETERS ---
+bootstrap                     True
+ccp_alpha                     0.0
+class_weight                  None
+criterion                     entropy
+max_depth                     None
+max_features                  0.1
+max_leaf_nodes                None
+max_samples                   0.5
+min_impurity_decrease         0.0
+min_samples_leaf              2
+min_samples_split             2
+min_weight_fraction_leaf      0.0
+monotonic_cst                 None
+n_estimators                  100
+n_jobs                        -1
+oob_score                     False
+random_state                  0
+verbose                       0
+warm_start                    True

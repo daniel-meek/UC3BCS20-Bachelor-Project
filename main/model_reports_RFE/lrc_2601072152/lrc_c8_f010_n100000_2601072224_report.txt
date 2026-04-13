@@ -1,0 +1,62 @@
+======================================================================
+Model Report: lrc_c8_f010_n100000_2601072224
+Model Creation: 2026-01-07 22:24
+======================================================================
+
+--- CORE STATS ---
+Features:      10
+Accuracy:      0.7336
+Precision:     0.7732
+Recall:        0.733
+F1-score:      0.742
+Training Time: 3.718750 s
+Model Size:    1.730469 KB
+
+--- LOGISTIC REGRESSION STATS ---
+
+--- CLASSIFICATION REPORT ---
+              precision    recall  f1-score   support
+
+           0     0.5812    0.4994    0.5372      2507
+           1     1.0000    0.9112    0.9536      2490
+           2     0.9075    0.7137    0.7990      2473
+           3     0.8698    0.9030    0.8861      2537
+           4     0.9489    0.8899    0.9185      2525
+           5     0.5522    0.5633    0.5577      2489
+           6     0.8835    0.6074    0.7199      2473
+           7     0.4427    0.7757    0.5637      2506
+
+    accuracy                         0.7336     20000
+   macro avg     0.7732    0.7330    0.7420     20000
+weighted avg     0.7731    0.7336    0.7423     20000
+
+--- FEATURE IMPORTANCE  ---
+             Feature  Importance
+  inter_arrival_time   86.822025
+ src_ip_mac_60_count   50.275464
+stream_jitter_60_sum   46.227417
+     src_ip_60_count   46.016389
+ src_ip_mac_10_count   41.382208
+     stream_60_count   39.565450
+    channel_60_count   39.199668
+      channel_60_var   38.568229
+     stream_30_count   31.330048
+              min_et    7.211647
+
+--- UNUSED FEATURES (0) ---
+None
+--- PARAMETERS ---
+C                             947259726504655
+class_weight                  balanced
+dual                          False
+fit_intercept                 True
+intercept_scaling             1
+l1_ratio                      0.0
+max_iter                      100
+n_jobs                        -1
+penalty                       deprecated
+random_state                  0
+solver                        saga
+tol                           0.0001
+verbose                       0
+warm_start                    False

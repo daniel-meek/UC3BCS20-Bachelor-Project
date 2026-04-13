@@ -1,0 +1,111 @@
+======================================================================
+Model Report: lrc_c8_f059_n100000_2601072217
+Model Creation: 2026-01-07 22:17
+======================================================================
+
+--- CORE STATS ---
+Features:      59
+Accuracy:      0.7793
+Precision:     0.8131
+Recall:        0.7787
+F1-score:      0.7857
+Training Time: 14.187500 s
+Model Size:    5.622070 KB
+
+--- LOGISTIC REGRESSION STATS ---
+
+--- CLASSIFICATION REPORT ---
+              precision    recall  f1-score   support
+
+           0     0.6302    0.5281    0.5747      2507
+           1     0.9987    0.9112    0.9530      2490
+           2     0.9753    0.8302    0.8969      2473
+           3     0.9283    0.9385    0.9334      2537
+           4     0.9677    0.9620    0.9648      2525
+           5     0.5865    0.6127    0.5993      2489
+           6     0.9261    0.6280    0.7484      2473
+           7     0.4921    0.8188    0.6147      2506
+
+    accuracy                         0.7793     20000
+   macro avg     0.8131    0.7787    0.7857     20000
+weighted avg     0.8130    0.7793    0.7859     20000
+
+--- FEATURE IMPORTANCE  ---
+              Feature  Importance
+   inter_arrival_time   49.686099
+      stream_60_count   20.820548
+     channel_60_count   20.305346
+  src_ip_mac_60_count   19.692979
+      stream_30_count   17.894637
+      src_ip_60_count   15.340188
+       channel_60_var   15.328928
+ stream_jitter_60_sum   13.730181
+                 q1_p   13.688178
+ stream_jitter_30_sum   12.731703
+       channel_30_var   12.584603
+      stream_10_count   11.716364
+      channel_1_count   11.452897
+  src_ip_mac_30_count   10.961396
+                min_p   10.836417
+   src_ip_mac_1_count   10.522002
+       stream_1_count   10.280521
+   src_ip_mac_5_count   10.139067
+       src_ip_1_count    9.846616
+ stream_jitter_10_sum    9.099310
+  src_ip_mac_10_count    8.958703
+             http_uri    8.074874
+      channel_60_mean    7.859722
+     channel_30_count    7.749303
+       src_ip_5_count    7.555148
+  stream_jitter_5_sum    7.383107
+      src_ip_30_count    6.979710
+               min_et    6.718383
+                min_e    6.718383
+      channel_5_count    6.603139
+      src_ip_10_count    6.492943
+                   q1    6.223995
+                 q1_e    6.223995
+        stream_60_var    6.140188
+  stream_jitter_1_sum    6.113426
+     channel_10_count    5.849881
+         stream_1_var    5.780859
+     src_ip_mac_1_var    5.639812
+   src_ip_mac_60_mean    5.282874
+       src_ip_30_mean    5.271713
+   src_ip_mac_30_mean    4.965646
+stream_jitter_60_mean    4.942995
+stream_jitter_30_mean    4.914188
+        channel_5_var    4.860115
+       src_ip_60_mean    4.826095
+    http_content_type    4.822978
+        src_ip_30_var    4.821086
+stream_jitter_10_mean    4.759576
+        src_ip_10_var    4.749851
+       channel_10_var    4.745679
+        src_ip_60_var    4.732840
+ stream_jitter_5_mean    4.723096
+    src_ip_mac_10_var    4.709253
+                var_e    4.701857
+                max_p    4.694853
+    src_ip_mac_60_var    4.671799
+        channel_1_var    4.441105
+ stream_jitter_1_mean    4.406880
+      channel_30_mean    4.158643
+
+--- UNUSED FEATURES (0) ---
+None
+--- PARAMETERS ---
+C                             947259726504655
+class_weight                  balanced
+dual                          False
+fit_intercept                 True
+intercept_scaling             1
+l1_ratio                      0.0
+max_iter                      100
+n_jobs                        -1
+penalty                       deprecated
+random_state                  0
+solver                        saga
+tol                           0.0001
+verbose                       0
+warm_start                    False
