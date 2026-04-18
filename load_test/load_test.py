@@ -8,6 +8,7 @@ import sys
 import warnings
 import os
 import matplotlib.pyplot as plt
+
 from matplotlib.ticker import StrMethodFormatter
 
 """
@@ -20,7 +21,7 @@ When running on the target system, use:
 # Fix for the "Feature Names" Warning...
 warnings.filterwarnings("ignore", category=UserWarning)
 
-# --- Global config ---
+# === Global config ===
 PRE_TEST_DURATION = 10
 POST_TEST_DURATION = 10
 TEST_DURATION = 40
@@ -33,7 +34,7 @@ class StatsContainer:
         self.rows_processed_cumulative = 0
 
 class GlobalStats:
-    # Container to hold summary stats for all models
+    # Container to hold summary stats for all models.
     def __init__(self):
         self.records = []
 
@@ -55,6 +56,7 @@ class GlobalStats:
         print(f"\n[+] Global summary saved to {filename}")
 
 class SystemMonitor:
+    # 
     def __init__(self, output_prefix, stats_container):
         self.stats = []
         self.output_prefix = output_prefix
@@ -250,7 +252,7 @@ def plot_results(prefix):
         
         ax1.set_title(f"Target Rate: {rate} rows/s", fontsize=12, pad=10, loc='left')
         
-        # Highlight active test area
+        # Highlight active test section
         if 'status' in df.columns:
             active_df = df[df['status'] == 'load_test']
             if not active_df.empty:
@@ -270,7 +272,7 @@ def plot_results(prefix):
         plt.savefig(output_filename)
         print(f"\rSuccess! Graph saved to: {output_filename}")
     else:
-        print("\nNo CSV files found.")
+        print("\nNo CSV files found :(.")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

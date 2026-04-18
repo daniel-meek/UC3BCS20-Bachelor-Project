@@ -157,7 +157,7 @@ def combine_class_dfs(dfs_list, args, root, save_dataset):
         print(f"\r[*] Normalizing values to range [0, 1]...".ljust(100), end="", flush=True)
 
         # Replace all Inf values with NaN so that the MinMaxScaler can fit all values to [0,1]
-        main_df[features] = main_df[features].replace([np.inf, -np.inf], np.nan)
+        main_df[features] = main_df[features].replace([np.inf, -np.inf], np.nan) # np might be able to be changed to float("inf"), but I never got it working...
         
         scaler = MinMaxScaler()
         main_df[features] = scaler.fit_transform(main_df[features])

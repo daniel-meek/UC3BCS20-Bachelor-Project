@@ -1,11 +1,6 @@
 import os
-import sys
 import time
 import argparse
-import pandas as pd
-import numpy as np
-import seaborn as sns
-
 
 from utils import info, graph_acc_size_time_vs_features
 from data_loader import load_csv, create_binary_packet_df, create_multiclass_8_packet_df, create_multiclass_28_packet_df, create_binary_flow_df, create_multiclass_8_flow_df, create_multiclass_28_flow_df
@@ -27,8 +22,10 @@ def get_args():
 
     parser.add_argument("-n", "--rows", type=int, help="Total rows per dataset. Omitting this creates ballanced datasets")
 
+    # Global random state
     parser.add_argument("--random_state", type=int, default=0, help="Sets the random state for reproducibility")
 
+    # Model settings
     parser.add_argument("--save_model", action="store_true", help="Saves the trained models")
     parser.add_argument("--save_report", action="store_true", help="Saves the model report")
     parser.add_argument("--save_dataset", action="store_true", help="Saves the dataset")
@@ -36,15 +33,16 @@ def get_args():
 
     parser.add_argument("--dtc", action="store_true", help="Use Decision Tree Classifier")
     parser.add_argument("--rfc", action="store_true", help="Use Random Forest Classifier")
-    # parser.add_argument("--xgb", action="store_true", help="Use XGBoost Classifier")
     parser.add_argument("--lrc", action="store_true", help="Use Logistic Regression Classifier")
     parser.add_argument("--fnn", action="store_true", help="Use Feedforward Neural Network")
 
+    # Feature selection settings
     parser.add_argument("-r", "--rfe", action="store_true", help="Perform Recursive Feature Elimination")
     parser.add_argument("--min_features", type=int, default=1, help="Sets the cut-off point for RFE")
     parser.add_argument("--cut_features", type=int, default=1, help="Sets the number of features to cut")
     parser.add_argument("--rfe_proxy", choices=["dtc", "rfc", "lrc"], default="dtc", help="Selects the proxy model for models that dont support RFE")
 
+    # Graphing settings
     parser.add_argument("--graph", action="store_true", help="Graps the results to .pdf")
 
     args = parser.parse_args()
