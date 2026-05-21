@@ -4,7 +4,7 @@
 
 This repository contains the code and tools developed for the bachelor project: A Framework for On-Device Anomaly Detection in IoT Networks.
 
-The code facilitates the training, optimization, and evaluation of machine learning models for anomaly detection on resource-constrained Internet of Things (IoT) hardware. It utilizes the CICIoT2024 dataset to evaluate four model architectures (Decision Tree, Random Forest, Logistic Regression, and Feedforward Neural Network). The project leverages Recursive Feature Elimination (RFE) to optimize feature subsets and includes a load-testing suite designed for a Raspberry Pi 3B+ to measure real-world performance metrics like CPU utilization and packet throughput.
+The code facilitates the training, optimization, and evaluation of machine learning models for anomaly detection on resource-constrained Internet of Things (IoT) devices. It uses the CICIoT2024 dataset to evaluate four model architectures (Decision Tree, Random Forest, Logistic Regression, and Feedforward Neural Network). The project uses Recursive Feature Elimination (RFE) to explore the effect of feature optimizaton on model performance and includes a load-testing script designed for a Raspberry Pi 3B+ to measure CPU utilization and packet throughput metrics.
 
 ## Report
 
@@ -12,11 +12,13 @@ This repository serves as Appendix A to the thesis submitted in partial fulfillm
 
 - **Title**: A Framework for On-Device Anomaly Detection in IoT Networks
 - **Institution**: Noroff University College
-- **Supervisor**: Bertram Haskins
+- **Supervisor**: Bertram Haskins (Bertram.Haskins@noroff.no)
+
+***
 
 ## Appendix A - Tools
 
-During the thesis, two programs and a handfull of scripts were developed to implement the methodology. These were `main.py` and `load_test.py`, allong with the scripts in `/helper_scripts`
+During the thesis, two programs and a handfull of scripts were developed to implement the methodology. These were `/main` and `/load_test`, allong with the scripts in `/helper_scripts`.
 
 These scripts come with minimal error handling, as they were buildt to only be used by the author. They can, and will break.
 
@@ -54,8 +56,6 @@ pip install pandas scikit-learn numpy matplotlib psutil pyarrow
 The script relies on the CICIoT2024 dataset found at [https://www.unb.ca/cic/datasets/iot-diad-2024.html](https://www.unb.ca/cic/datasets/iot-diad-2024.html)
 
 #### Usage
-
-**Arguments**
 
 **Dataset Settings:**
 - `--csv` : `str` - Path to a pre-processed dataset `.csv` file. Skips new dataset creation.
@@ -122,8 +122,6 @@ pip install psutil numpy pandas matplotlib
 
 #### Usage
 
-**Arguments**
-
 **Target Selection:**
 - `--all` - Automatically searches for and tests all `.pkl` model files in the current directory and subdirectories.
 - `--model` : `str` - Path to a single `.pkl` model file to test.
@@ -139,26 +137,32 @@ pip install psutil numpy pandas matplotlib
 taskset -c 0 python3 load_test.py --model dtc_load_tester.pkl --data dataset_packet_multiclass8_n10000.csv --name dtc --graph
 ```
 
-
 ### `helper_scripts`
 
 `helper_scripts` is a collection of `.ipynb` and `.py` helper scripts used to create graphs, optimize models, and explore the CICIoT2024 dataset.
-- `model_dtc` - 
-- `model_rfc` - 
-- `model_lrc` - 
-- `model_fnn` - 
-- `graphing` - 
-- `dataset` - 
+- `model_DecisionTreeClassifier.ipynb` - 
+- `model_RandomForestClassifier.ipynb` - 
+- `model_LogisticRegression.ipynb` - 
+- `model_FeedforwardNeuralNetwork.ipynb` - 
+- `model_KNearestNeighbors.ipynb` - 
+- `model_XGBoost.ipynb` - 
+- `graphing.ipynb` - 
+- `dataset.ipynb` -
+- `main.ipynb` - Original working notebook for the project.
+
+***
 
 ## Changelog
 
-### v1.0 - April 2026
-- Initial release accompanying the thesis submission. Includes full dataset preprocessing, model training, RFE implementation, and Raspberry Pi load testing scripts used during the thesis.
+### V1.1 - 21.05.2026
+- Updated codebase and additional tooling uploaded after thesis grading.
+
+### v1.0 - 29.04.2026
+- Initial release allong with the thesis submission. Includes dataset pre-processing, model training, RFE implementation, and Raspberry Pi load testing scripts used during the thesis, allong with helper scripts used to explore the CICIoT2024 dataset and optimize models.
 
 ## Author
 
 Daniel Larsen Meek
-Bachelor in Cyber Security, Noroff University College
 
 ## Licese
 

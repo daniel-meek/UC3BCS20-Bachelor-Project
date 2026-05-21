@@ -62,7 +62,7 @@ class SystemMonitor:
         self.output_prefix = output_prefix
         self.stats_container = stats_container
         self.process = psutil.Process()
-        self.process.cpu_percent() # Prime the counter
+        self.process.cpu_percent() # Ready the counter
 
     def capture_snapshot(self, status):
         # Records a single data point
